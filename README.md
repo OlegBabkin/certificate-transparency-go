@@ -1,3 +1,7 @@
+This is a fork of the original [google repository](https://github.com/google/certificate-transparency-go). The goal of this fork is to include additional curve algorithms of the ECDSA encryption:
+
+- secp256k1
+
 # Certificate Transparency: Go Code
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/google/certificate-transparency-go)](https://goreportcard.com/report/github.com/google/certificate-transparency-go)
