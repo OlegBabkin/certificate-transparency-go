@@ -5,6 +5,7 @@
 package x509
 
 import (
+	"crypto"
 	"crypto/ecdsa"
 	"crypto/rsa"
 	"errors"
@@ -33,7 +34,7 @@ type pkcs8 struct {
 // More types might be supported in the future.
 //
 // This kind of key is commonly encoded in PEM blocks of type "PRIVATE KEY".
-func ParsePKCS8PrivateKey(der []byte) (key interface{}, err error) {
+func ParsePKCS8PrivateKey(der []byte) (key crypto.Signer, err error) {
 	var privKey pkcs8
 	if _, err := asn1.Unmarshal(der, &privKey); err != nil {
 		if _, err := asn1.Unmarshal(der, &ecPrivateKey{}); err == nil {

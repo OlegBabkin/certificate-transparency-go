@@ -626,11 +626,12 @@ func getPublicKeyAlgorithmFromOID(oid asn1.ObjectIdentifier) PublicKeyAlgorithm 
 // NB: secp256r1 is equivalent to prime256v1,
 // secp192r1 is equivalent to ansix9p192r and prime192v1
 var (
-	OIDNamedCurveP224 = asn1.ObjectIdentifier{1, 3, 132, 0, 33}
-	OIDNamedCurveP256 = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 7}
-	OIDNamedCurveP384 = asn1.ObjectIdentifier{1, 3, 132, 0, 34}
-	OIDNamedCurveP521 = asn1.ObjectIdentifier{1, 3, 132, 0, 35}
-	OIDNamedCurveP192 = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 1}
+	OIDNamedCurveP224   = asn1.ObjectIdentifier{1, 3, 132, 0, 33}
+	OIDNamedCurveP256   = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 7}
+	OIDNamedCurveP384   = asn1.ObjectIdentifier{1, 3, 132, 0, 34}
+	OIDNamedCurveP521   = asn1.ObjectIdentifier{1, 3, 132, 0, 35}
+	OIDNamedCurveP192   = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 1}
+	OIDNamedCurveP256K1 = asn1.ObjectIdentifier{1, 3, 132, 0, 10} // 1.3.132.0.10
 )
 
 func namedCurveFromOID(oid asn1.ObjectIdentifier, nfe *NonFatalErrors) elliptic.Curve {
@@ -646,6 +647,8 @@ func namedCurveFromOID(oid asn1.ObjectIdentifier, nfe *NonFatalErrors) elliptic.
 	case oid.Equal(OIDNamedCurveP192):
 		nfe.AddError(errors.New("insecure curve (secp192r1) specified"))
 		return secp192r1()
+	case oid.Equal(OIDNamedCurveP256K1):
+		return secp256k1()
 	}
 	return nil
 }
@@ -664,6 +667,8 @@ func OIDFromNamedCurve(curve elliptic.Curve) (asn1.ObjectIdentifier, bool) {
 		return OIDNamedCurveP521, true
 	case secp192r1():
 		return OIDNamedCurveP192, true
+	case secp256k1():
+		return OIDNamedCurveP256K1, true
 	}
 
 	return nil, false
