@@ -20,8 +20,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe/cache/lru"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/cache/noop"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/cache/lru"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/cache/noop"
 )
 
 // Type represents the cache type.

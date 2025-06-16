@@ -27,12 +27,12 @@ import (
 	"sync"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/preload"
-	"github.com/google/certificate-transparency-go/scanner"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/client"
+	"github.com/OlegBabkin/certificate-transparency-go/jsonclient"
+	"github.com/OlegBabkin/certificate-transparency-go/preload"
+	"github.com/OlegBabkin/certificate-transparency-go/scanner"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 	"k8s.io/klog/v2"
 )
 

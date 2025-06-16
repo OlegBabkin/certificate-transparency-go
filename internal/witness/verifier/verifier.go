@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/internal/witness/api"
-	"github.com/google/certificate-transparency-go/tls"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/internal/witness/api"
+	"github.com/OlegBabkin/certificate-transparency-go/tls"
 )
 
 // WitnessVerifier consists of a CT signature verifier.

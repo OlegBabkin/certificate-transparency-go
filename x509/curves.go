@@ -6,7 +6,7 @@ package x509
 
 import (
 	"crypto/elliptic"
-	"github.com/google/certificate-transparency-go/x509/ecdsaext"
+	"github.com/OlegBabkin/certificate-transparency-go/x509/ecdsaext"
 	"math/big"
 	"sync"
 )

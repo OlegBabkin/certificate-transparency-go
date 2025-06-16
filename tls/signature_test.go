@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/certificate-transparency-go/testdata"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/testdata"
+	"github.com/OlegBabkin/certificate-transparency-go/tls"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 )
 
 func TestVerifySignature(t *testing.T) {
@@ -151,7 +151,7 @@ func PEM2PrivKey(s string) crypto.PrivateKey {
 	}
 	if pkcs8Key, err := x509.ParsePKCS8PrivateKey(p.Bytes); err == nil {
 		if reflect.TypeOf(pkcs8Key).Kind() == reflect.Ptr {
-			pkcs8Key = reflect.ValueOf(pkcs8Key).Elem().Interface()
+			pkcs8Key = reflect.ValueOf(pkcs8Key).Elem().Interface().(crypto.Signer)
 		}
 		return pkcs8Key
 	}

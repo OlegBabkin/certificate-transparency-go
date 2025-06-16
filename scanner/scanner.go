@@ -22,8 +22,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 	"k8s.io/klog/v2"
 )
 

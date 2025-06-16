@@ -23,10 +23,10 @@ import (
 	"regexp"
 	"testing"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/jsonclient"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/client"
+	"github.com/OlegBabkin/certificate-transparency-go/jsonclient"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 )
 
 func TestScannerMatchAll(t *testing.T) {

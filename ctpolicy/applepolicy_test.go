@@ -16,7 +16,7 @@ package ctpolicy
 import (
 	"testing"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 
 	"github.com/kylelemons/godebug/pretty"
 )

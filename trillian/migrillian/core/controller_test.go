@@ -18,7 +18,7 @@ import (
 	"context"
 	"testing"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
 )
 
 func TestVerifyConsistencyEmptyHead(t *testing.T) {

@@ -25,19 +25,19 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/schedule"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/trillian/ctfe"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/client"
+	"github.com/OlegBabkin/certificate-transparency-go/schedule"
+	"github.com/OlegBabkin/certificate-transparency-go/tls"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 	"github.com/google/trillian/monitoring"
 	"github.com/transparency-dev/merkle"
 	"github.com/transparency-dev/merkle/proof"
 	"github.com/transparency-dev/merkle/rfc6962"
 	"k8s.io/klog/v2"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
 )
 
 const (

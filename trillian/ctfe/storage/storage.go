@@ -20,9 +20,9 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/storage/mysql"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/storage/postgresql"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/storage/mysql"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/storage/postgresql"
 )
 
 // IssuanceChainStorage is an interface which allows CTFE binaries to use different storage implementations for issuance chains.

@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	"github.com/OlegBabkin/certificate-transparency-go/asn1"
+	"github.com/OlegBabkin/certificate-transparency-go/x509/pkix"
 )
 
 const (

@@ -16,7 +16,7 @@
 package main
 
 import (
-	"github.com/google/certificate-transparency-go/client/ctclient/cmd"
+	"github.com/OlegBabkin/certificate-transparency-go/client/ctclient/cmd"
 	"k8s.io/klog/v2"
 )
 

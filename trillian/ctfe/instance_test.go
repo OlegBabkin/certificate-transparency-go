@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/cache"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/cache"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/configpb"
 	"github.com/google/trillian/crypto/keys"
 	"github.com/google/trillian/crypto/keys/pem"
 	"github.com/google/trillian/crypto/keyspb"

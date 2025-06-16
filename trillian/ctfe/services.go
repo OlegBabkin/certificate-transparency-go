@@ -19,16 +19,16 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/cache"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/storage"
-	"github.com/google/certificate-transparency-go/trillian/util"
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/asn1"
+	"github.com/OlegBabkin/certificate-transparency-go/tls"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/cache"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/storage"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/util"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 	"github.com/google/trillian"
 	"k8s.io/klog/v2"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
 )
 
 // directIssuanceChainService does no special work, relying on the chains

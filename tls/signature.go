@@ -29,7 +29,7 @@ import (
 	"log"
 	"math/big"
 
-	"github.com/google/certificate-transparency-go/asn1"
+	"github.com/OlegBabkin/certificate-transparency-go/asn1"
 )
 
 type dsaSig struct {

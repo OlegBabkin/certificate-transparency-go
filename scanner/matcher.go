@@ -21,10 +21,10 @@ import (
 	"regexp"
 	"time"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/x509"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/asn1"
+	"github.com/OlegBabkin/certificate-transparency-go/client"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 )
 
 // Matcher describes how to match certificates and precertificates, based solely on the parsed [pre-]certificate;

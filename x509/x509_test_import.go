@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509/pkix"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/x509/pkix"
 )
 
 func main() {

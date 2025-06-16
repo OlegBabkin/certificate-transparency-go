@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/google/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 )
 
 // String for certificate blocks in BEGIN / END PEM headers

@@ -1,4 +1,4 @@
-module github.com/google/certificate-transparency-go
+module github.com/OlegBabkin/certificate-transparency-go
 
 go 1.23.0
 

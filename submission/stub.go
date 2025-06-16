@@ -19,11 +19,11 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/client"
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/tls"
-	"github.com/google/certificate-transparency-go/x509util"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/client"
+	"github.com/OlegBabkin/certificate-transparency-go/loglist3"
+	"github.com/OlegBabkin/certificate-transparency-go/tls"
+	"github.com/OlegBabkin/certificate-transparency-go/x509util"
 )
 
 type rootInfo struct {

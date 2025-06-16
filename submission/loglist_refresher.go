@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/certificate-transparency-go/loglist3"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/OlegBabkin/certificate-transparency-go/loglist3"
+	"github.com/OlegBabkin/certificate-transparency-go/x509util"
 )
 
 const (

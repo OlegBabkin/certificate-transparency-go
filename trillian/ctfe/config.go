@@ -22,10 +22,10 @@ import (
 	"strings"
 	"time"
 
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/configpb"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
 	"github.com/go-sql-driver/mysql"
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/configpb"
-	"github.com/google/certificate-transparency-go/x509"
 	"github.com/jackc/pgx/v5/pgconn"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"

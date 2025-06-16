@@ -26,7 +26,7 @@ import (
 	"net/url"
 	"os"
 
-	wit_api "github.com/google/certificate-transparency-go/internal/witness/api"
+	wit_api "github.com/OlegBabkin/certificate-transparency-go/internal/witness/api"
 	"k8s.io/klog/v2"
 )
 

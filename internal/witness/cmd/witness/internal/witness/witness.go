@@ -29,9 +29,9 @@ import (
 	"fmt"
 	"reflect"
 
-	ct "github.com/google/certificate-transparency-go"
-	"github.com/google/certificate-transparency-go/internal/witness/api"
-	"github.com/google/certificate-transparency-go/tls"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
+	"github.com/OlegBabkin/certificate-transparency-go/internal/witness/api"
+	"github.com/OlegBabkin/certificate-transparency-go/tls"
 	"github.com/transparency-dev/merkle/proof"
 	"github.com/transparency-dev/merkle/rfc6962"
 	"google.golang.org/grpc/codes"

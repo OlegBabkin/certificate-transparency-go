@@ -15,8 +15,8 @@
 package loglist3
 
 import (
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/x509util"
 )
 
 // LogRoots maps Log-URLs (stated at LogList) to the pools of their accepted

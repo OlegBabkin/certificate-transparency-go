@@ -19,7 +19,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/google/certificate-transparency-go/testdata"
+	"github.com/OlegBabkin/certificate-transparency-go/testdata"
 )
 
 func TestGenerateHash(t *testing.T) {

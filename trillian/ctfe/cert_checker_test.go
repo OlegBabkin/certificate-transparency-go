@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/google/certificate-transparency-go/asn1"
-	"github.com/google/certificate-transparency-go/trillian/ctfe/testonly"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509/pkix"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/OlegBabkin/certificate-transparency-go/asn1"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/testonly"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/x509/pkix"
+	"github.com/OlegBabkin/certificate-transparency-go/x509util"
 )
 
 func wipeExtensions(cert *x509.Certificate) *x509.Certificate {

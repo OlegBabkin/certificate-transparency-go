@@ -18,7 +18,7 @@ import (
 	"context"
 	"fmt"
 
-	ct "github.com/google/certificate-transparency-go"
+	ct "github.com/OlegBabkin/certificate-transparency-go"
 	"github.com/spf13/cobra"
 )
 

@@ -17,9 +17,9 @@ package ctfe
 import (
 	"testing"
 
-	"github.com/google/certificate-transparency-go/trillian/ctfe/testonly"
-	"github.com/google/certificate-transparency-go/x509"
-	"github.com/google/certificate-transparency-go/x509util"
+	"github.com/OlegBabkin/certificate-transparency-go/trillian/ctfe/testonly"
+	"github.com/OlegBabkin/certificate-transparency-go/x509"
+	"github.com/OlegBabkin/certificate-transparency-go/x509util"
 )
 
 func mustDePEM(t *testing.T, pem string) *x509.Certificate {
