@@ -26,15 +26,16 @@ type AlgorithmIdentifier struct {
 type RDNSequence []RelativeDistinguishedNameSET
 
 var attributeTypeNames = map[string]string{
-	"2.5.4.6":  "C",
-	"2.5.4.10": "O",
-	"2.5.4.11": "OU",
-	"2.5.4.3":  "CN",
-	"2.5.4.5":  "SERIALNUMBER",
-	"2.5.4.7":  "L",
-	"2.5.4.8":  "ST",
-	"2.5.4.9":  "STREET",
-	"2.5.4.17": "POSTALCODE",
+	"2.5.4.6":                    "C",
+	"2.5.4.10":                   "O",
+	"2.5.4.11":                   "OU",
+	"2.5.4.3":                    "CN",
+	"2.5.4.5":                    "SERIALNUMBER",
+	"2.5.4.7":                    "L",
+	"2.5.4.8":                    "ST",
+	"2.5.4.9":                    "STREET",
+	"2.5.4.17":                   "POSTALCODE",
+	"0.9.2342.19200300.100.1.25": "DC", // Domain Component
 }
 
 // String returns a string representation of the sequence r,
